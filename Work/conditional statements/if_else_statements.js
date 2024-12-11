@@ -50,5 +50,41 @@
 
 // 5. Enter Students marks wheather pass or not.
 
-let a = 35;
+// let marks = 50;
 
+// if (marks >= 35 && marks <= 100) {
+//     console.log("student is pass..");
+// }
+// else if (marks >= 0 && marks < 35) {
+//     console.log("student is fail..");
+// }
+// else {
+//     console.log("plz enter valid marks..");
+// }
+
+
+// 6. Enter year find its leap year or not.
+
+// let year = 2000;
+
+// if (year %4 == 0 && year % 100 != 0 || year % 400 == 0){
+//     console.log("year is leap year");
+// }
+// else {
+//     console.log("year is not leap year");
+// }
+
+
+// 7. Enter a, b, c find largest among them.
+
+// let a = 10, b= 20, c = 30;
+
+// if (a > b && a > c){
+//     console.log("a is largest");
+// }
+// else if (b > a && b > c){
+//     console.log("b is largest");
+// }
+// else {
+//     console.log("c is largest");
+// }
