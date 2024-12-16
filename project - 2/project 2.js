@@ -5,30 +5,47 @@
     // • For units above 250, 4/units
     // • For all bills above 150 units an additional surcharge of 20% of total bill amount is added.
 
-// let unit = + prompt("Enter the number of units");
-// let amount = 0;
+// let units = 250, bill, finalbill;
+    
+// if(units <= 50){
+//     bill = units * 1;
+//     console.log("The electric bill is:", bill,  "Rs")
+// }
+// else if( units <= 150){
+//     bill =((units - 50) * 2 ) + ((units - 100) * 1);
+//     console.log("The electric bill is:", bill,  "Rs")
+// }
+// else if( units <= 250){
+//     bill =( (units - 150) * 3 ) + ((units - 150) * 2) + ((units - 200) * 1);
+//     console.log("The electric bill is:", bill,  "Rs")
+    
+//     extracharge =  bill * 0.2
+//     console.log("extracharge:", extracharge)
+    
+//     finalbill = extracharge + bill
+//     console.log("The electric bill is:", bill,  "Rs")
+//     console.log("The electric finalbill is:", finalbill,  "Rs")
+    
+// }
+// else if( units > 250){
+//     bill = ((units - 250) * 4 ) + ((units - 250) * 3) + ((units - 150) * 2) + ((units - 200)* 1)
+//     console.log("The electric bill is:", bill,  "Rs")
+    
+//     extracharge =  bill * 0.2
+//     console.log("extracharge:", extracharge)
+    
+    
+//     finalbill = extracharge + bill
+//     console.log("The electric bill is:", bill,  "Rs")
+//     console.log("The electric finalbill is:", finalbill,  "Rs")
+// }
 
-// if (unit <= 50) {
-//   amount = unit * 1;0
-// }
-// else if (unit <= 150) {
-//   amount = 50 * 1 + (unit - 50) * 2;
-// }
-// else if (unit <= 100) {
-//   amount = 50 * 1 + 100 * 2 + (unit - 150) * 3;
-// }
-// else {
-//   amount = 50 * 1 + 100 * 2 + 100 * 3 + (unit - 250) * 4;
-// }
-// if (unit > 150) {
-//   amount = amount + amount * 0.2;
-// }
-// console.log("The amount to pay is: " + amount);
-
-// output:
-// Enter the number of units: 200
-// The amount to pay is: 420
-
+// output : 
+// The electric bill is: 550 Rs
+// extracharge: 110
+// The electric bill is: 550 Rs
+// The electric finalbill is: 660 Rs
+    
 
 // 2. Write a JAVASCRIPT Program to print season according user input using switch case.
 // (e.g. 1 to 4 for "Winter", 5 to 8 for "Summer", 9 to 12 "Monsoon" then add any number
