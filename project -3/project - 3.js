@@ -20,6 +20,8 @@
 // 5 x 10 = 50
 
 
+/*=============================================================================================================*/
+
 
 
 // 2. Write a JAVASCRIPT Program to calculate the factorial of a given number using a while loop.
@@ -34,7 +36,7 @@
 
 // output: factorial of 5 is : 120
 
-
+/*=============================================================================================================*/
 
 
 // 3. Write a JAVASCRIPT Program to find the Armstrong number list of a given number using a do while loop.
@@ -63,7 +65,7 @@
 // output: 153 is an Armstrong number
 
 
-
+/*=============================================================================================================*/
 
 
 // 4. Write a JAVASCRIPT Program to find the Palindrome number list of a given number using a while loop.
@@ -85,7 +87,7 @@
 // output: 121 is a Palindrome number
 
 
-
+/*=============================================================================================================*/
 
 
 // 5. Write a JAVASCRIPT Program to calculate the Fibonacci Series of a given number using a while loop.
@@ -103,7 +105,7 @@
 // output: 1 1 2 3 5 8 13 21 34 55 89
 
 
-
+/*=============================================================================================================*/
 
 
 // 6. Write a JAVASCRIPT Program to add all the integers between O and 30 and display the total using do while loop.
@@ -119,7 +121,7 @@
 // output: sum of all the integers between 0 and 30 is : 465
 
 
-
+/*=============================================================================================================*/
 
 
 // 7. Write a JAVASCRIPT Program which iterates the integers from 1 to 100. For multiples of three
@@ -188,7 +190,7 @@
 // Fizz
 
 
-
+/*=============================================================================================================*/
 
 
 // 9. Write a JAVASCRIPT Program that displays 1+4+9+16+....+100 = 385 on one line using a for loop.
@@ -202,7 +204,7 @@
 // output: sum of 1+4+9+16+....+100 = 385
 
 
-
+/*=============================================================================================================*/
 
 
 // 10. Write a JAVASCRIPT Program that displays below pattern using nested for loop:
@@ -230,6 +232,7 @@
             // 5 4 3 2 1
 
 
+/*=============================================================================================================*/
 
 
 // 11. Write a JAVASCRIPT Program that displays below pattern using nested for loop:
@@ -256,3 +259,5 @@
             // 4 5 6
             // 7 8 9 10
             // 11 12 13 14 15
+
+/*=============================================================================================================*/
