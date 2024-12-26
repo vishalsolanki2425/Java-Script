@@ -2,12 +2,16 @@
 // no return type function when call a function without argument at that time print
 // message Good Morning.
 
-// function greet() {
-//     console.log("Good Morning");
-// }
-// greet();
+function Greeting(message) {
+    if (message) {
+        console.log(message);
+    } else {
+        console.log("Good Morning");
+    }
+}
+Greeting("vishal solanki");
 
-// output: Good Morning
+// output: vishal solanki
 
 /*=======================================================================================================*/
 
