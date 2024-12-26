@@ -99,31 +99,72 @@
 
 // let f;
 
-// function FahrenheitToCelsius(f) {
-//     FahrenheitToCelsius = (f - 32) / 1.8;
-//     return FahrenheitToCelsius;
+// function ftoc(f) {
+//     ftoc = (f - 32) / 1.8;
+//     return ftoc;
 // }
 
-// FahrenheitToCelsius(10);
-// console.log("The ans is : " + FahrenheitToCelsius);
+// ftoc(5);
+// console.log("The ans is : " + ftoc);
 
-// output: The ans is : -12.222222222222221
+// output: The ans is : -15
 
 /*========================================================================================================*/
 
 // 8. Write a JAVASCRIPT Program to convert Celsius to Fahrenheit (f= (c*1.8)+32 )
 // using return type with argument function
 
-let ;
-let result = CelsiusToFahrenheit(c);
+// let c;
 
-function CelsiusToFahrenheit(c) {
-    let f = (c * 1.8) + 32;
-    return f;
-}
+// function ctof(c) {
+//     ctof = (c * 1.8) + 32;
+//     return c;
+// }
 
-console.log("The ans is : " + result);
+// ctof(5);
+// console.log("The ans is : " + ctof);
 
-// output: The ans is : 86
+// output: The ans is : 41
+
+/*========================================================================================================*/
+
+// 9. Write a JAVASCRIPT Program to find if a given number is odd or even using an
+// argument with no return type.
+
+// let number;
+
+// function oddEven(number) {
+//     if (number % 2 == 0) {
+//         console.log("The number is even");
+//     } else {
+//         console.log("The number is odd");
+//     }
+// }
+
+// oddEven(10);
+
+// output: The number is odd
+
+/*========================================================================================================*/
+
+// 10. Write a JAVASCRIPT Program to swap a value without third variable using with
+// argument no return type
+
+// let a,b;
+
+// function swap(a) {
+//     b = 10;
+//     a = a + b;
+//     b = a - b;
+//     a = a - b;
+//     console.log("The value of a is : " + a);
+//     console.log("The value of b is : " + b);
+// }
+
+// swap(5);
+
+// output: 
+// The value of a is : 10
+// The value of b is : 5
 
 /*========================================================================================================*/
