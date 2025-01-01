@@ -7,26 +7,26 @@
 // Green,White
 // Red,Green,White,Black,orange
 
-let mycolor = ["Red", "Green", "White", "Black"];
+// let mycolor = ["Red", "Green", "White", "Black"];
 
-console.log(mycolor.join(","));
+// console.log(mycolor.join(","));
 //Output: Red,Green,White,Black
 
-console.log(mycolor.join("+"));
+// console.log(mycolor.join("+"));
 //Output: Red+Green+White+Black
 
-console.log(mycolor.slice(0, -1).join(","));
+// console.log(mycolor.slice(0, -1).join(","));
 //Output: Red,Green,White
 
-console.log(mycolor[0]);
+// console.log(mycolor[0]);
 //Output: Red
 
-console.log(mycolor.slice(1, 3).join(","));
+// console.log(mycolor.slice(1, 3).join(","));
 //Output: Green,White
 
-let orange = [mycolor, "Orange"];
+// let orange = [mycolor, "Orange"];
 
-console.log(orange.join(","));
+// console.log(orange.join(","));
 //Output: Red,Green,White,Black,Orange
 
 
