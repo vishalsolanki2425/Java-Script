@@ -93,13 +93,17 @@
 
 // 4.Write a JavaScript program to convert all array elements into ASCII values.
 
-// let array = ["a"];
+// let array = ["a","b","c","d","e"];
 
 // for (let i = 0; i < array.length; i++) {
 //   console.log("ASCII value of " + array[i] + " is " + array[i].charCodeAt(0));
 // }
 
-// output: ASCII value of 10 is 97
+// output: ASCII value of a is 97
+//         ASCII value of b is 98
+//         ASCII value of c is 99
+//         ASCII value of d is 100
+//         ASCII value of e is 101
 
 /*================================================================================================*/
 
