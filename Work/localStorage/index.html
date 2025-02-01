@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 8px;
+            margin: 5px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            padding: 8px 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .form-container {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="form">
+                <h2>Add New Employee</h2>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" id="fname" name="fname" ></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" name="email" ></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="password" name="password" ></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No</td>
+                        <td><input type="text" id="contant" name="contant" ></td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td><input type="text" id="role" name="role" ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="eform-container" style="display: none;">
+            <form id="eform">
+                <h2>Edit Employee</h2>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" id="efname" name="fname" ></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="eemail" name="email" ></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="epassword" name="password" ></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No</td>
+                        <td><input type="text" id="econtant" name="contant" ></td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td><input type="text" id="erole" name="role" ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="updat" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="view" align="center">
+            <h2>Employee List</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="viewdata"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="localStorage.js"></script>
+</body>
+</html>
