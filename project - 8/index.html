@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart with Edit and Delete</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-container">
+            <h1>Add to Cart</h1>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="form-section">
+            <form id="productForm">
+                <h2>Add a Product</h2>
+                <input type="text" id="nameInput" placeholder="Product Name" >
+                <input type="number" id="priceInput" placeholder="Product Price" >
+                <input type="text" id="imageInput" placeholder="Image URL" >
+                <input type="submit" value="Add Product">
+            </form>
+        </div>
+
+        <div class="list-header">
+            <h1>Product List</h1>
+        </div>
+        <div class="items-list" id="productList"></div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
