@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: rgba(54, 27, 255, 0.5);
+    background: rgba(49, 49, 49, 0.5);
     padding: 15px 0;
     text-align: center;
 }
@@ -29,9 +29,8 @@ header h1 {
     font-weight: 700;
 }
 
-/* Cart Button Styles */
 #cartButton {
-    background-color: #ff6600;
+    background-color: #ff6f00;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -72,13 +71,9 @@ header h1 {
 }
 
 .form-section input[type="submit"] {
-    background-color: #28a745;
+    background-color: #ff6f00;
     color: #fff;
     cursor: pointer;
-}
-
-.form-section input[type="submit"]:hover {
-    background-color: #218838;
 }
 
 .items-list {
@@ -89,7 +84,7 @@ header h1 {
 }
 
 .item-card {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(75, 74, 74, 0.7);
     border-radius: 10px;
     padding: 20px;
     color: #fff;
@@ -113,7 +108,7 @@ header h1 {
 }
 
 .item-card button {
-    background-color: #007bff;
+    background-color: #ff6f00;
     color: white;
     border: none;
     padding: 10px;
@@ -124,5 +119,5 @@ header h1 {
 }
 
 .item-card button:hover {
-    background-color: #0056b3;
+    background-color: #ff8a31;
 }
