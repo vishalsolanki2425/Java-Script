@@ -12,12 +12,13 @@
     <header>
         <div class="main-container header-container">
             <h1>Watch</h1>
-            <button id="cartButton">🛒 Cart</button>
+            <a href="cart.html" id="cartButton">🛒 Cart</a>
+            <button id="productButton">Product</button>
         </div>
     </header>
 
     <div class="main-container">
-        <div class="form-section">
+        <div class="form-section" id="productFormSection" style="display: none;">
             <form id="productForm">
                 <h2>Add a Watch</h2>
                 <input type="text" id="nameInput" placeholder="Product Name">
@@ -31,6 +32,12 @@
             <h1>Watch List</h1>
         </div>
         <div class="items-list" id="productList"></div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content" id="popupContent">
+            <span id="closePopup" class="close">&times;</span>
+        </div>
     </div>
 
     <script src="js/cart.js"></script>
