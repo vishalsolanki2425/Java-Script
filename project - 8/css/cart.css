@@ -6,23 +6,42 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('https://via.placeholder.com/1600x900');
-    background-size: cover;
-    background-position: center;
     color: white;
     padding: 0;
 }
 
 header {
-    background: rgba(62, 62, 62, 0.5);
+    background: rgba(54, 27, 255, 0.5);
     padding: 15px 0;
     text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 header h1 {
     color: #000000;
     font-size: 2.5em;
     font-weight: 700;
+}
+
+/* Cart Button Styles */
+#cartButton {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cartButton:hover {
+    background-color: #e65c00;
 }
 
 .main-container {
@@ -64,7 +83,7 @@ header h1 {
 
 .items-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
     margin-top: 40px;
 }
@@ -106,14 +125,4 @@ header h1 {
 
 .item-card button:hover {
     background-color: #0056b3;
-}
-
-.item-card .edit-delete {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.item-card .edit-delete button {
-    margin-right: 5px;
 }
