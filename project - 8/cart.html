@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart</title>
     <link rel="stylesheet" href="css/cart.css">
 </head>
+
 <body>
     <header>
         <div class="main-container header-container">
@@ -21,6 +23,35 @@
         <div class="items-list" id="cartList"></div>
     </div>
 
-    <script src="js/cart.js"></script>
+    <script>
+        function loadCartData() {
+            let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+            console.log("CartData ==> ", cartData);
+            let cartList = document.querySelector("#cartList");
+
+            cartList.innerHTML = "";
+
+            cartData.forEach((product, index) => {
+                let productCard = `
+            <div class="item-card">
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>$${product.price}</p>
+                <button onclick="removeCart(${index})">Remove</button>
+            </div>`;
+                cartList.innerHTML += productCard;
+            });
+        }
+
+        function removeCart(index) {
+            let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+            cartData.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cartData));
+            loadCartData();
+        }
+        loadCartData()
+
+    </script>
 </body>
+
 </html>

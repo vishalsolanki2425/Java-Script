@@ -5,14 +5,14 @@ let imageInput = document.querySelector("#imageInput");
 let popup = document.querySelector("#popup");
 let popupContent = document.querySelector("#popupContent");
 let closePopup = document.querySelector("#closePopup");
-let productFormSection = document.querySelector("#productFormSection"); 
-let productButton = document.querySelector("#productButton"); 
+let productFormSection = document.querySelector("#productFormSection");
+let productButton = document.querySelector("#productButton");
 
 productButton.addEventListener("click", () => {
     if (productFormSection.style.display === "none") {
         productFormSection.style.display = "block";
     } else {
-        productFormSection.style.display = "none"; 
+        productFormSection.style.display = "none";
     }
 });
 
@@ -55,4 +55,13 @@ productForm.addEventListener("submit", (e) => {
     productForm.reset();
     loadProducts();
 });
+
 loadProducts();
+
+function addToCart(index) {
+    let products = JSON.parse(localStorage.getItem("products"));
+    let cartItem = products[index];
+    let cartData = JSON.parse(localStorage.getItem("cart")) || []
+    cartData.push(cartItem)
+    localStorage.setItem("cart", JSON.stringify(cartData));
+}
