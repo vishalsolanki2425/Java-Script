@@ -26,7 +26,7 @@
     <script>
         function loadCartData() {
             let cartData = JSON.parse(localStorage.getItem("cart")) || [];
-            console.log("CartData ==> ", cartData);
+            // console.log("CartData ==> ", cartData);
             let cartList = document.querySelector("#cartList");
 
             cartList.innerHTML = "";
