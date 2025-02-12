@@ -16,7 +16,7 @@ document.querySelector("#btn").addEventListener("click", ()=> {
     <p class="card-text">${data.Language}</p>
   </div>
 </div>`
-movieDetail.innerHTML = result;
+weather.innerHTML = result;
     })
     .catch(err => console.log(err));
 
