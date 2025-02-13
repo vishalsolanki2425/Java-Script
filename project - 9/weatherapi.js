@@ -30,7 +30,7 @@ function getWeather() {
                 backgroundImage = "";
             }
 
-            document.body.style.background = `${backgroundImage} no-repeat center center/cover`;
+            document.head.style.background = `${backgroundImage}`;
 
             document.getElementById("weatherResult").innerHTML = `
                 <h2>${data.name}</h2>
@@ -43,6 +43,5 @@ function getWeather() {
         })
         .catch(error => {
             document.getElementById("weatherResult").innerHTML = `<p>Error fetching weather data</p>`;
-            console.log(error);
         });
 }

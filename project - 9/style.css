@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: url('image/backimage.jpg');
+    background-image: url('image/backimage.jpg');
 }
 
 .container {
     margin-top: 50px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(128, 179, 235, 0.8);
     border-radius: 10px;
     width: 300px;
     margin-left: auto;
@@ -27,6 +27,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
