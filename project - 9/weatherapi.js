@@ -43,5 +43,6 @@ function getWeather() {
         })
         .catch(error => {
             document.getElementById("weatherResult").innerHTML = `<p>Error fetching weather data</p>`;
+            console.log(error);
         });
 }
