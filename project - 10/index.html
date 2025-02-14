@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 India Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>COVID-19 India Tracker</h1>
+        <input type="date" id="searchDate">
+        <button onclick="searchData()">Search</button>
+
+        <h2>Overall Stats</h2>
+        <div class="stats">
+            <p><strong>Date:</strong> <span id="date">-</span></p>
+            <p><strong>Total Cases:</strong> <span id="cases">-</span></p>
+            <p><strong>Total Deaths:</strong> <span id="deaths">-</span></p>
+            <p><strong>Total Recovered:</strong> <span id="recovered">-</span></p>
+        </div>
+
+        <h3>State-wise COVID-19 Data:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>State</th>
+                    <th>Total Cases</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                </tr>
+            </thead>
+            <tbody id="stateData">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="covid-api.js"></script>
+</body>
+</html>
