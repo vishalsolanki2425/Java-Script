@@ -3,74 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <div class="title">Registration</div>
-        <form action="#">
-          <div class="user__details">
-            <div class="input__box">
-              <span class="details" >Full Name</span>
-              <input type="text" id="fname" placeholder="E.g: John Smith" >
-              <span id="fnameError" class="red" ></span>
-            </div>
-            <div class="input__box">
-              <span class="details">Username</span>
-              <input type="text" id="uname" placeholder="johnWC98" >
-              <span id="unameError" class="red" ></span>
-            </div>
-            <div class="input__box">
-              <span class="details">Email</span>
-              <input type="text" id="email" placeholder="johnsmith@hotmail.com" >
-              <span id="emailError" class="red" ></span>
-            </div>
-            <div class="input__box">
-              <span class="details">Phone Number</span>
-              <input type="tel" id="phone" placeholder="012-345-6789" >
-              <span id="phoneError" class="red" ></span>
-            </div>
-            <div class="input__box">
-              <span class="details">Password</span>
-              <input type="password" id="password" placeholder="********" >
-              <span id="passwordError" class="red" ></span>
-            </div>
-            <div class="input__box">
-              <span class="details">Confirm Password</span>
-              <input type="password" id="conpassword" placeholder="********" >
-              <span id="conpasswordError" class="red" ></span>
-            </div>
-      
-          </div>
-          <div class="gender__details">
-            <input type="radio" name="gender" id="dot-1">
-            <input type="radio" name="gender" id="dot-2">
-            <input type="radio" name="gender" id="dot-3">
-            <span class="gender__title">Gender</span>
-            <span id="genderError" class="red" ></span>
-            <div class="category">
-              <label for="dot-1">
-                <span class="dot one"></span>
-                <span>Male</span>
-              </label>
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span>Female</span>
-              </label>
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span>Prefer not to say</span>
-              </label>
-            </div>
-          </div>
-          <div class="button">
-            <input type="submit" value="Register">
-          </div>
-        </form>
-      </div>
-    
-    <script src="script.js"></script>  
+        <div class="form-container">
+            <form id="form">
+                <h2>Add New Employee</h2>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" id="fname" name="fname" placeholder="Full Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="password" name="password" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No</td>
+                        <td><input type="text" id="contant" name="contant" placeholder="Contact"></td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td><input type="text" id="role" name="role" placeholder="Role"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="eform-container" style="display: none;">
+            <form id="eform">
+                <h2>Edit Employee</h2>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text" id="efname" name="fname" ></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="eemail" name="email" ></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="epassword" name="password" ></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No</td>
+                        <td><input type="text" id="econtant" name="contant" ></td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td><input type="text" id="erole" name="role" ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="updat" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="view" align="center">
+            <h2>Employee List</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="viewdata"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="form.js"></script>
 </body>
 </html>
