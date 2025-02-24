@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exam</title>
+    <title>Recipe Book with Advanced Search and Filterlngproject Objective</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="header">
+        <h1>Recipe Book with Advanced Search and Filteringproject Objective</h1>
+    </div>
+
+    <div class="container">
+
+        <h1>Recipe Book</h1>
+        <input type="text" id="title" placeholder="Recipe Title">
+        <input type="text" id="image" placeholder="Image URL">
+        <textarea id="ingredients" placeholder="Ingredients"></textarea>
+
+        <select id="cuisine">
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Indian">Indian</option>
+            <option value="Chinese">Chinese</option>
+        </select>
+
+        <button onclick="addRecipe()">Add Recipe</button>
+
+    </div>
+
+    <div class="container">
+        <div class="search">
+            <input type="text" id="search" placeholder="Search by title or ingredients">
+        </div>
+    </div>
+
+    <div id="recipe-container" class="recipe-container"></div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
