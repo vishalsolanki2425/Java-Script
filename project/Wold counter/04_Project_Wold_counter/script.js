@@ -12,4 +12,4 @@ function clearText() {
     textInput.value = '';
     wordCount.textContent = 0;
     charCount.textContent = 0;
-}
+}   
